@@ -1,0 +1,473 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 13vh;
+    position: fixed;
+    background-color: rgba(248,246,246,255);
+    
+}
+#logo{
+    padding-bottom: 1vh;
+    height: 5vh;
+    grid-column: 3/5;
+}
+#logo img{
+    width: 30vw;
+}
+nav{
+    grid-column: span 6;
+    height: 5vh;
+    padding-top: 1vh;
+}
+nav ul li a{
+    font-size: 4.8vw;
+    text-decoration: none;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(126, 126, 126);
+    
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    grid-gap: 1vw;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;  
+}
+.container-flex{
+    display: flex;
+}
+.grid-item1{
+    grid-column: 1 / span 6;
+}
+.grid-item2{
+    grid-column:span 6;
+}
+section{
+    min-height: 75vh;
+    width: 100vw;
+}
+section div{
+    grid-column: span 6;
+}
+#hidden{
+    visibility: hidden;
+}
+h1{
+    padding-top: 15vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(107, 107, 107);
+    font-size: 3.3vh;
+    background-color: rgb(255, 255, 255);
+}
+#sobre{
+    padding-top: 15vh;
+    color: rgb(109, 109, 109);
+    font-family: 'Source Sans Pro', sans-serif;
+    padding-bottom: 2.5vh;
+}
+#sobre div p{
+    height: 15vh;
+    padding: 1vh;
+    text-align: center;
+    font-size: 3vh;
+    line-height: 4vh;
+    font-family: 'Roboto', sans-serif;
+}
+#sobre div div{
+    float: left;
+    width: 50%;
+    align-self: flex-end
+}
+#sobre div div img{
+    width:  95%;
+    border: black 1px solid;
+}
+#cursos{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#cursos div p{
+    font-size: 5.9vw;
+    color: rgb(107, 107, 107);
+    padding: 5vw;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+}
+#cursos div {
+    margin-right: 7vw;
+    margin-left: 7vw;
+}
+#cursos div img{
+    width: 100%;
+}
+#bordavermeia{
+    border-top: 5px solid rgb(253, 60, 60);
+}
+#bordaazul{
+    border-top:5px solid blue;
+}
+#bordaverde{
+    border-top:5px solid rgb(61, 219, 61);
+}
+
+#planos{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(107, 107, 107);
+    font-size: 5.9vw;
+}
+#planos div h2{
+    margin-top: 1.8vh;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(199, 199, 199);
+    
+    text-align: center;
+}
+#contratar{
+    visibility: hidden;
+    width: 0000.1vw;
+    height: 0000.1vw;
+}
+#Bronze{
+    margin-right: 5vw;
+    margin-left: 5vw;
+    background-color: rgb(187, 143, 0);
+    margin-bottom: 2vh;
+}
+#planos div p{
+    
+    text-align: left;
+    line-height: 100px;
+    font-size: 5.5vw;
+    background-color: rgb(255, 255, 255);
+    width: 86vw;
+    margin-bottom: 2vh;
+}
+#Prata{
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    background-color: rgb(218, 218, 218);
+    
+}
+#Ouro{
+    margin-bottom: 2vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    background-color: rgb(251, 255, 0);
+}
+#valores{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(107, 107, 107);
+    font-size: 5.9vw;
+    
+}
+#Qualidade1 h3{
+    border-left: solid 4px rgb(0, 22, 223);
+    padding-left: 2vw;
+    margin-left: 3vw;
+}
+#Qualidade1 p{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7vw;
+    font-size: 4.8vw;
+    margin-bottom: 3vh;
+}
+
+#Inovaçao h3{
+    border-left: solid 4px rgb(255, 230, 0);
+    padding-left: 2vw;
+    margin-left: 3vw;
+}
+#Inovaçao p{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7vw;
+    font-size: 4.8vw;
+    margin-bottom: 3vh;
+}
+
+#Eficiencia h3{
+    border-left: solid 4px rgb(252, 0, 0);
+    padding-left: 2vw;
+    margin-left: 3vw;
+}
+#Eficiencia p{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7vw;
+    font-size: 4.8vw;
+    margin-bottom: 3vh;
+}
+
+#Pesquisa h3{
+    border-left: solid 4px rgb(255, 0, 221);
+    padding-left: 2vw;
+    margin-left: 3vw;
+}
+#Pesquisa p{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7vw;
+    font-size: 4.8vw;
+    margin-bottom: 3vh;
+}
+
+#Qualidade2 h3{
+    border-left: solid 4px rgb(0, 238, 255);
+    padding-left: 2vw;
+    margin-left: 3vw;
+}
+#Qualidade2 p{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7vw;
+    font-size: 4.8vw;
+    margin-bottom: 3vh;
+}
+
+#Compromisso h3{
+    border-left: solid 4px rgb(0, 163, 27);
+    padding-left: 2vw;
+    margin-left: 3vw;
+}
+#Compromisso p{
+    font-size: 4.8vw;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7vw;
+    margin-bottom: 3vh;
+}
+
+@media only screen and (min-width: 720px){
+header{
+    width: 100vw;
+    height: 9vh;      
+}
+    #logo{
+    grid-column: 1/2;    
+}
+#logo img{
+    padding-top: 0.5vh;
+    width: 8vw;
+}
+
+nav ul li a{   
+    font-size: 1.3vw;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+nav{
+    margin-top: 3vh;
+    grid-column: 4/span 4;
+}
+section{
+    border-bottom: 1px solid black;
+    padding-bottom: 4vh;
+}
+
+section div{
+    grid-column: span 2;
+}
+h1{
+    font-size: 1.7vw;
+    margin-left: 2vh;
+}
+
+#sobre div{
+    grid-column: span 3;
+}
+#hidden{
+    visibility: visible;
+
+}
+#sobre div div img{
+    width:  88%;
+}
+#sobre div p{
+    margin-top: 6vh;
+}
+#cursos div {
+    margin-right: 0%;
+    margin-left: 0%;
+}
+#cursos div{
+    grid-column: span 2;
+    align-self: flex-end;
+}
+#cursos div p{
+    font-size: 2vw;
+    padding: 2vw;
+
+}
+#bordavermeia{
+    border-top: 15px solid rgb(253, 60, 60);
+}
+#bordaazul{
+    border-top:15px solid blue;
+}
+#bordaverde{
+    border-top:15px solid rgb(61, 219, 61);
+}
+#planos{
+    font-size: 3vh;
+}
+#planos div{
+    grid-column: span 2;
+}
+#planos div p{
+    margin-left: 1vw;
+    width: 29vw;
+}
+#planos div h2{
+    margin: 1.8vh 1vw 0% 1vw;
+}
+#planos div h3{
+    margin-left: 1vw;
+}
+
+#Bronze{
+    height: 62vh;
+    margin: 0% 0% 0% 0%;
+    align-self: flex-end;
+    padding-top: 20px; 
+}
+#Bronze  div p{
+    line-height: 80px;
+    font-size: 1.6vw;
+    height: 39vh;
+}
+#Prata{
+    padding-top: 20px;
+    border: 1px solid gray  ;
+    height: 73vh;
+    margin: 0% 0% 0% 0%;
+    align-self: flex-end;
+}
+#Prata div p{
+    font-size: 1.7vw;
+    height: 50vh;
+}
+#Ouro{
+    height: 74vh;
+    margin: 0% 0% 0% 0%;
+    align-self: flex-end;
+    padding-top: 20px;
+}
+#Ouro div p{
+    font-size: 1.9vw;
+    height: 51vh;
+}
+#contratar{
+    font-size: 1.6vw;
+    visibility: visible;
+    width: 10vw;
+    height: 2.3vw;
+    margin-top: 1.8vh;
+    border: 1px solid rgb(124, 124, 124);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 10vw;
+    border-radius: 5px;    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+}
+
+#valores{
+    font-size: 1.7vw;
+}
+#valores div p{
+    font-size: 1.5vw;
+}
+
+#Qualidade1 h3{
+    border-left: solid 11px rgb(66, 24, 218);
+}
+
+
+#Inovaçao h3{
+    border-left: solid 11px rgb(255, 230, 0);
+}
+
+#Eficiencia h3{
+    border-left: solid 11px rgb(252, 0, 0);
+}
+
+#Pesquisa h3{
+    border-left: solid 11px rgb(255, 0, 221);
+}
+#Qualidade2 h3{
+    border-left: solid 11px rgb(0, 225, 255);
+
+}
+#Compromisso h3{
+    border-left: solid 11px rgb(28, 119, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
